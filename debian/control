@@ -4,7 +4,7 @@ Priority: important
 Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
 XSBC-Original-Maintainer: Marco d'Itri <md@linux.it>
 Build-Depends: debhelper-compat (= 12), liblzma-dev, libssl-dev, xsltproc,
-  autoconf, automake, libtool, gtk-doc-tools
+  autoconf, automake, libtool, gtk-doc-tools, libzstd-dev, zstd
 Standards-Version: 4.4.0.1
 Rules-Requires-Root: no
 Vcs-Git: https://salsa.debian.org/md/kmod.git

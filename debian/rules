@@ -20,6 +20,8 @@ CONFFLAGS_deb  = $(CONFFLAGS) \
   --enable-gtk-doc \
   --with-openssl \
   --with-xz \
+  --with-zstd \
+  --disable-test-modules \
   --enable-debug
 CONFFLAGS_udeb = $(CONFFLAGS) \
   $(subst -O2,-Os -fomit-frame-pointer,$(shell DEB_BUILD_MAINT_OPTIONS="hardening=-all" \
@@ -70,6 +72,7 @@ build-udeb/.stamp-build: build-udeb/config.status
 override_dh_auto_build: build-deb/.stamp-build $(BUILD_UDEB_TARGET)
 
 override_dh_auto_test:
+	dh_auto_test --builddir=build-deb
 
 override_dh_auto_install:
 	dh_auto_install --builddir=build-deb --destdir=$D

@@ -6,3 +6,9 @@
 # Debian integration
 aliases_conf
 debian_manpages
+
+# Zstd support
+3821e1971ec53fabbbb9f2679ea988ee12db61c8.patch
+2e4ef3da550a63f9bdef30acbafa9cb2e98b9259.patch
+d83f488c6028cceed1671399dd63e5b3e89c2962.patch
+enable-subdir-testsuite.patch

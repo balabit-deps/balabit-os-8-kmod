@@ -1,3 +1,9 @@
+kmod (27-1ubuntu2.1) focal; urgency=medium
+
+  * Build with zstd compression and testsuite enabled. LP: #1933491
+
+ -- Dimitri John Ledkov <dimitri.ledkov@canonical.com>  Fri, 28 Jan 2022 14:49:50 +0000
+
 kmod (27-1ubuntu2) focal; urgency=medium
 
   * d/p/verbose_missing_bin: drop this patch to avoid spurious missing
